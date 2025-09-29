@@ -18,7 +18,7 @@ const allProducts = [
     price: "₹28",
     originalPrice: "₹32",
     rating: 4.8,
-    image: "/api/placeholder/400/300",
+    image: "/image6.png",
     description: "Farm fresh full cream milk, rich in calcium and protein",
     badge: "Bestseller"
   },
@@ -29,7 +29,7 @@ const allProducts = [
     price: "₹58",
     originalPrice: "₹65",
     rating: 4.9,
-    image: "/api/placeholder/400/300",
+    image: "/image5.jpeg",
     description: "Utterly butterly delicious, made from pure cream",
     badge: "Premium"
   },
@@ -40,7 +40,7 @@ const allProducts = [
     price: "₹95",
     originalPrice: "₹105",
     rating: 4.7,
-    image: "/api/placeholder/400/300",
+    image: "/image2.jpeg",
     description: "Fresh and creamy processed cheese cubes",
     badge: "New"
   },
@@ -51,7 +51,7 @@ const allProducts = [
     price: "₹45",
     originalPrice: "₹52",
     rating: 4.6,
-    image: "/api/placeholder/400/300",
+    image: "/image4.jpeg",
     description: "Rich and creamy vanilla ice cream",
     badge: "Popular"
   },
@@ -62,7 +62,7 @@ const allProducts = [
     price: "₹24",
     originalPrice: "₹28",
     rating: 4.5,
-    image: "/api/placeholder/400/300",
+    image: "/image3.jpeg",
     description: "Light and nutritious toned milk",
     badge: ""
   },
@@ -73,7 +73,7 @@ const allProducts = [
     price: "₹35",
     originalPrice: "₹40",
     rating: 4.8,
-    image: "/api/placeholder/400/300",
+    image: "/image1.jpeg",
     description: "Rich milk chocolate bar",
     badge: "Favorite"
   }
@@ -252,7 +252,7 @@ const Products = () => {
                         >
                           <Link to={`/product/${product.id}`}>
                             <ShoppingCart className="h-4 w-4 mr-1" />
-                            Add
+                            Buy Now
                           </Link>
                         </Button>
                       </div>

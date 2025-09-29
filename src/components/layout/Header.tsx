@@ -55,9 +55,12 @@ const Header = () => {
           <Button variant="ghost" size="icon">
             <ShoppingCart className="h-5 w-5" />
           </Button>
-          <Button className="bg-gradient-primary shadow-soft">
-            Order Now
-          </Button>
+                <Link
+  to="/signup"
+  className="bg-gradient-primary text-white px-4 py-2 rounded-md text-sm font-medium shadow-soft hover:opacity-90 transition"
+>
+  Signup / Login
+</Link>
         </div>
 
         {/* Mobile Menu */}
@@ -90,9 +93,13 @@ const Header = () => {
                   <ShoppingCart className="h-4 w-4 mr-2" />
                   Cart
                 </Button>
-                <Button className="bg-gradient-primary shadow-soft">
-                  Order Now
-                </Button>
+                <Link
+  to="/signup"
+  className="bg-gradient-primary text-white px-4 py-2 rounded-md text-sm font-medium shadow-soft hover:opacity-90 transition"
+>
+  Signup / Login
+</Link>
+
               </div>
             </div>
           </SheetContent>

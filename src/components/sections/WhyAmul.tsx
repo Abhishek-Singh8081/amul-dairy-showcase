@@ -1,6 +1,7 @@
 import { Truck, Shield, Clock, Heart } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
+
 const WhyAmul = () => {
   const features = [
     {

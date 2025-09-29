@@ -13,7 +13,7 @@ const FeaturedProducts = () => {
       price: "₹28",
       originalPrice: "₹32",
       rating: 4.8,
-      image: "/api/placeholder/400/300",
+      image: "/image6.png",
       description: "Farm fresh full cream milk",
       badge: "Bestseller"
     },
@@ -24,7 +24,7 @@ const FeaturedProducts = () => {
       price: "₹58",
       originalPrice: "₹65",
       rating: 4.9,
-      image: "/api/placeholder/400/300",
+      image: "/image5.jpeg",
       description: "Utterly butterly delicious",
       badge: "Premium"
     },
@@ -35,7 +35,7 @@ const FeaturedProducts = () => {
       price: "₹95",
       originalPrice: "₹105",
       rating: 4.7,
-      image: "/api/placeholder/400/300",
+      image: "/image2.jpeg",
       description: "Fresh and creamy cheese",
       badge: "New"
     },
@@ -46,7 +46,7 @@ const FeaturedProducts = () => {
       price: "₹45",
       originalPrice: "₹52",
       rating: 4.6,
-      image: "/api/placeholder/400/300",
+      image: "/image4.jpeg",
       description: "Rich vanilla ice cream",
       badge: "Popular"
     }

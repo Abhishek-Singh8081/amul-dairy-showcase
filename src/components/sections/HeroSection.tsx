@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Play } from "lucide-react";
+import { NavLink } from "react-router-dom";
 
 const HeroSection = () => {
   return (
@@ -13,42 +14,56 @@ const HeroSection = () => {
           playsInline
           className="w-full h-full object-cover"
         >
-          <source
-            src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
-            type="video/mp4"
-          />
+          <source src="/whatsappvideo.mp4" type="video/mp4" />
         </video>
-        <div className="absolute inset-0 bg-gradient-hero"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-transparent"></div>
       </div>
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 text-center text-white">
         <div className="max-w-4xl mx-auto space-y-8">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight">
+          <h1
+            className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight tracking-wide"
+            style={{
+              fontFamily: "'Great Vibes', cursive",
+              letterSpacing: '0.05em',
+              lineHeight: 1.1,
+            }}
+          >
             Fresh Daily Dairy
             <span className="block bg-gradient-accent bg-clip-text text-transparent">
               Delivered at Your Doorstep
             </span>
           </h1>
-          
+
           <p className="text-lg md:text-xl lg:text-2xl text-white/90 max-w-2xl mx-auto leading-relaxed">
             Experience the taste of pure, farm-fresh dairy products. From creamy milk to delicious 
             butter, we bring India's finest dairy straight to your home every morning.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button 
-              size="lg" 
-              className="bg-accent hover:bg-accent-light text-accent-foreground shadow-strong text-lg px-8 py-6"
-            >
-              Start Your Daily Delivery
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
+        <NavLink
+  to="/products"
+  className={({ isActive }) =>
+    `inline-flex items-center justify-center rounded-lg px-8 py-3 text-lg font-semibold
+    transition-colors duration-300
+    shadow-md
+    ${
+      isActive
+        ? "bg-accent text-accent-foreground"
+        : "bg-accent hover:bg-accent-light text-accent-foreground"
+    }`
+  }
+>
+  Start Your Daily Delivery
+  <ArrowRight className="ml-2 h-5 w-5" />
+</NavLink>
+
             
             <Button 
               variant="outline" 
               size="lg"
-              className="border-white/30 text-white hover:bg-white/10 text-lg px-8 py-6"
+              className="bg-transparent border-white/30 text-white hover:bg-white/10 text-lg px-8 py-6 transition-colors duration-300"
             >
               <Play className="mr-2 h-5 w-5" />
               Watch Our Story

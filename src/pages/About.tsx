@@ -55,6 +55,7 @@ const About = () => {
           </div>
         </section>
 
+
         {/* Story Section */}
         <section className="py-16 bg-background">
           <div className="container mx-auto px-4">
@@ -97,7 +98,7 @@ const About = () => {
               <div className="relative">
                 <div className="aspect-[4/3] bg-gray-100 rounded-2xl overflow-hidden shadow-medium">
                   <img
-                    src="/api/placeholder/600/450"
+                    src="/mainbanner.jpeg"
                     alt="Amul Heritage"
                     className="w-full h-full object-cover"
                   />
