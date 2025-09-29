@@ -21,7 +21,7 @@ const HeroSection = () => {
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 text-center text-white">
-        <div className="max-w-4xl mx-auto space-y-8">
+        <div className="max-w-4xl mx-auto space-y-8 mt-[3vh]">
           <h1
             className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight tracking-wide"
             style={{

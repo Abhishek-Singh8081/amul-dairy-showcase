@@ -377,12 +377,13 @@ const ProductDetail = () => {
                 </div>
 
                 {/* Actions */}
-               <div className="flex space-x-4">
+ <div className="flex flex-col sm:flex-row sm:items-center sm:space-x-4 space-y-3 sm:space-y-0 w-full">
   <Button
     variant="outline"
     size="lg"
     onClick={handleWishlist}
     aria-label="Add to Wishlist"
+    className="w-full sm:w-auto"
   >
     <Heart
       className={`mr-2 transition-colors ${
@@ -396,27 +397,31 @@ const ProductDetail = () => {
     size="lg"
     onClick={handleAddToCart}
     aria-label="Add to Cart"
+    className="w-full sm:w-auto"
   >
     <ShoppingCart className="mr-2" />
     Add to Cart
   </Button>
-<NavLink
-  to={`/order/${id}?quantity=${quantity}`}
-  aria-label="Buy Now"
-  className="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 px-6 h-11"
->
-  Buy Now
-</NavLink>
 
+  <NavLink
+    to={`/order/${id}?quantity=${quantity}`}
+    aria-label="Buy Now"
+    className="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 px-6 h-11 w-full sm:w-auto"
+  >
+    Buy Now
+  </NavLink>
 
-  <Button variant="outline" size="lg" aria-label="Share">
+  <Button
+    variant="outline"
+    size="lg"
+    aria-label="Share"
+    className="w-full sm:w-auto"
+  >
     <Share2 className="mr-2" />
     Share
   </Button>
-
-  {/* ✅ New Buy Now Button */}
-  
 </div>
+
 
 
                 {/* Delivery Features */}
